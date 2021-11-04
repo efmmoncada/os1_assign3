@@ -1,7 +1,7 @@
 CC = gcc
-CFLAGS = -g3 --std=gnu99
+CFLAGS = -g3 --std=gnu99 -Wall
 
-smallsh: smallsh.c
+smallsh: smallsh.c smallsh.h
 	$(CC) $(CFLAGS) -o smallsh smallsh.c
 
 clean:
